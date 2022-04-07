@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<link href="../css/style_pagesimage.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header>
+  <h1>Formularios en HTML</h1>
+</header>
+<nav>
+  <ul>
+    <li><a href="estilos_de_texto.html" target="_blank">Estilos de texto</a></li>
+    <li><a href="listas.html" target="_blank">Listas</a></li>
+    <li><a href="Tablas.html" target="_blank">Tablas</a></li>
+    <li><a href="imagenes.html">Imágenes</a></li>
+    <li><a href="videos.html">Videos</a></li>
+	 <li><a href="formuarios.html" target="_blank">Formularios</a></li>
+	
+    <li><a href="fuentes.html">Fuentes</a></li>
+ 
+  </ul>
+</nav>
+<main>
+  <section>
+    <h2>Formulario de registro</h2>
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</p>
+	  <form action="procesamiento.html" method="get">
+		  <label>Usuario</label>
+		  <input type="text" id="user" name="nave">
+		  <br>
+		  <label>Contraseña</label>
+		  <input type="password" id="password" name="password">
+		  <br>
+		  <input type="submit" value="Enviar">
+	  </form>
+  </section>
+  <section>
+    <h2>Entrevista con lista desplegable</h2>
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas.</p>
+    <form id="form1" name="form1" method="get" action="procesamiento.html">
+      <label for="nombre">Nombre:</label>
+      <input name="nombre" type="text" id="nombre" autocomplete="on" size="30" maxlength="100">
+      <br>
+		<br>
+	  <label for="select">País:&nbsp;</label>
+      <select name="select" autofocus="autofocus" id="select">
+        <option value="Mx">México</option>
+        <option value="Ch">Chile</option>
+        <option value="Esp">España</option>
+        <option value="Crs">Corea del Sur</option>
+      </select>
+		<br>
+		<br>
+      <input type="submit" name="submit3" id="submit3" value="Enviar">
+      
+    </form>
+    <p>&nbsp;</p>
+  </section>
+  <section>
+    <h2>Pregunta con radio button y casilla de verificación</h2>
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugito</p>
+    
+    <form id="form2" method="post" action="procesamiento.html">
+	  <label>Género</label>
+	  <table width="200">
+      <tr>
+        <td><label>
+          <input type="radio" name="G&egrave;nero" value="Femenino" id="Gegravenero_0">
+          Femenino</label></td>
+      </tr>
+      <tr>
+        <td><label>
+          <input type="radio" name="G&egrave;nero" value="Masculino" id="Gegravenero_1">
+          Masculino</label></td>
+      </tr>
+    </table>
+<br>  
+	<label>¿Cuál género de música prefieres?</label>
+	  <table width="200">
+	    <tr>
+	      <td><input type="checkbox" name="checkbox5" id="checkbox5">
+            <label for="checkbox5">Rock </label></td>
+        </tr>
+	    <tr>
+	      <td><input type="checkbox" name="checkbox4" id="checkbox4">
+            <label for="checkbox4">Electrónica </label></td>
+        </tr>
+	    <tr>
+	      <td><input type="checkbox" name="checkbox" id="checkbox">
+            <label for="checkbox">Folcklore </label></td>
+        </tr>
+	    <tr>
+	      <td><input type="checkbox" name="checkbox3" id="checkbox3">
+            <label for="checkbox3">Banda </label></td>
+        </tr>
+	    <tr>
+	      <td><input type="checkbox" name="checkbox2" id="checkbox2">
+            <label for="checkbox2">Pop&nbsp; </label></td>
+        </tr>
+      </table>
+	  <input name="submit2" type="submit" id="submit4" formaction="procesamiento.html" formmethod="GET" value="Enviar">
+    </form>    
+	</section>
+  <section>
+<h2>Formulario modificado con CSS</h2>
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptate</p>
+	  <form id="form3" name="form3" method= "post" action="procesamiento.html">
+    <label for="nombre">Nombre:&nbsp;</label>
+		 
+    <input name="nombre" type="text" autofocus="autofocus" id="nombre">
+	  <br>
+	    <br>
+	  <label for="email">Email:</label>
+      <input type="email" name="email" id="email">
+	<br>
+	<br>
+    <label for="comentario">Text Area:</label>
+	<textarea name="comentario" cols="20" rows="5" maxlength="100" id="comentario"></textarea></br>
+	<br>
+     <br> <input type="submit" name="submit2" id="submit2" value="Enviar">
+    </form>
+	
+	
+  
+	  
+  </section>
+  <section>
+    <h2>Cuestionario</h2>
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusawidth:tium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit </p>
+	  <form id="form4" name="form4" method= "get" action="procesamiento.html">
+		  <label for="fname">Nombre: </label>
+		  <input type="text" id="fname" name="fname" value="Peter"> <br>
+		  <label for="lname">Apellido: </label>
+		  <input type="text" id="lname" name="lname" value="Smith">
+		  <br>
+	    <br>
+	    <br>
+	    <label for="birthday"><b>Escribe tu fecha de nacimento: </b></label>
+		  <input type="date" id="birthday" name="birthday">
+		  <br>
+		   <br>
+		  <br>
+		  <label for="vol"><b>En la escala del 1 al 5 ¿Cómo te sientes hoy?: </b> </label>
+		  <input type="range" id="vol" name="vol" min="1" max="5">
+		 <br>
+		 <br>
+		 <br>
+		  <label for="favcolor"><b>Escoge tu color favorito</b></label>
+	    <input type="color" id="favcolor" name="favcolor" value="#ff000">
+		  <br>
+		  <br>
+		  <label for="phone"><b>Escribe tu número de celular: </b></label>
+		  <br>
+	    <input type="tel" id="phone" name="phone" placeholder="123-45-678">
+		  <br>
+		  <br>
+		 <br>
+		  <label for="gsearch"><b>Busca en google un artículo que te interese</b>: </label>
+		  <input type="search" id="gsearch" name="gsearch">
+		  <br>
+		 <br>
+		 <br>
+		  <label for="quantity"><b> Escribe tu número favorito en un rango de 1 a 100: </b></label>
+	    <input type="number" id="quantity" name="quantity" min="1" max="100">
+		<br>
+		 <br>
+		 <br>
+		  <label for="myfile"><b>Selecciona tu arcivo correspondiente: </b></label>
+		  <input type="file" id="myfile" name="myfile">
+		 <br>
+		 <br>
+		 <br>
+		  <label for="name"><b>Escribe tus tres libros favoritos: </b></label>
+		 <br>
+	     <input type="name" id="name" name="libro">
+		  
+		  <input type="name" id="name" name="libro">
+		  
+		  <input type="name" id="name" name="libro">
+		 <br>
+		 <br>
+		 <br>
+		  <label for="appt"><b>Selecciona una hora: </b></label>
+	    <input type="time" id="appt" name="appt">
+		  <br>
+		 <br>
+		 <br>
+    <input type="submit" value="Enviar">
+		  
+	  
+	  </form>
+  </section>
+</main>
+<footer>
+  <h6>Realizado por Natalia Romero Iturbe</h6>
+</footer>
+</body>
+</html>
